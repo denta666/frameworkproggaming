@@ -25,23 +25,22 @@ export class AuthService {
         // Implementation for user login
         const user: User = {
             id: 1,
-            username: "satria",
-            email: "satria@gmail.com",
-            password: "satria123"
+            username: "denta",
+            email: "denta@gmail.com",
+            password: "denta123"
         };
         if (loginDto.email !== user.email || loginDto.password !== user.password)
             {throw new UnauthorizedException('Email atau password salah');}
 
         return user;
     }
-
     // forgot password
     forgotPassword(ForgotPasswordDto: ForgotPasswordDto) {
         const user = {
             id: 1,
-            username: "satria",
-            email: "satria@gmail.com",
-            password: "satria123"
+            username: "denta",
+            email: "denta@gmail.com",
+            password: "denta123"
         };
 
         if (ForgotPasswordDto.email !== user.email)
